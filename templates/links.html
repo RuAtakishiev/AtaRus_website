@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Контакты | Атакишиев Руслан
+{% endblock %}
+
+{% block head %}
+    <link type="text/css" href="{{ url_for('static', filename='/css/links.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+    <div class="links__bar">
+        <img id="avatar" src="{{ url_for('static', filename='/images/Avatar.png') }}" alt="">
+        <div class="profile__info">
+            <p class="name">Атакишиев Руслан</p>
+            <p>Junior Backend Developer</p>
+            <div class="current__location">
+                <img id="location__icon" src="{{ url_for('static', filename='/images/LocationIcon.png') }}" alt="">
+                <p class="location__text">Республика Татарстан, Казань</p>
+            </div>
+        </div>
+        <div class="links__menu">
+            <a href="https://t.me/ata_rus"><img id="telegram" class="link__icon" src="{{ url_for('static', filename='/images/TelegramIcon.png') }}" alt="telegram"></a>
+            <a href="https://github.com/RuAtakishiev"><img id="github" class="link__icon" src="{{ url_for('static', filename='/images/GitHubIcon.png') }}" alt="github"></a>
+            <a href="https://vk.com/ata_rus"><img id="vk" class="link__icon" src="{{ url_for('static', filename='/images/VKIcon.png') }}" alt="vk"></a>
+        </div>
+    </div>
+{% endblock %}
